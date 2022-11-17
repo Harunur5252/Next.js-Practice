@@ -1,11 +1,8 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-<<<<<<< HEAD
 import Meta from "../../../components/meta"
 import {server} from '../../../config'
-=======
 
->>>>>>> 2ae735f4c19f908184f3cb6acb7c0cc0dc5a1e15
 
 function article({article}) {
     // const router = useRouter()
@@ -13,10 +10,7 @@ function article({article}) {
 
   return (
     <>
-<<<<<<< HEAD
         <Meta title={article.title} description={article.excerpt} />
-=======
->>>>>>> 2ae735f4c19f908184f3cb6acb7c0cc0dc5a1e15
         <h3>{article.title}</h3>
         <p>{article.body}</p>
         <br />
@@ -27,21 +21,15 @@ function article({article}) {
 
 export default article
 
-<<<<<<< HEAD
 
 export const getStaticProps = async (context) => {
     const res = await fetch(`${server}/api/articles/${context.params.id}`)
-=======
-export const getServerSideProps = async (context) => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
->>>>>>> 2ae735f4c19f908184f3cb6acb7c0cc0dc5a1e15
     const article = await res.json()
     return {
         props : {
             article
         }
     }
-<<<<<<< HEAD
 }
 
 export const getStaticPaths = async () => {
@@ -76,6 +64,5 @@ export const getStaticPaths = async () => {
 //         fallback:false
 //     }
 // }
-=======
-}
->>>>>>> 2ae735f4c19f908184f3cb6acb7c0cc0dc5a1e15
+
+
