@@ -3,15 +3,15 @@ import articleStyles from '../styles/Article.module.css'
 
 function ArticleItems({article}) {
   return (
-    <Link href='/article/[]' as={`/article/${article.id}`}>
-        <div className={articleStyles.card}>
+    <Link href={`/article/${article.id}`} legacyBehavior>
+        <a className={articleStyles.card}>
             <h3>
                 {article.title} 
             </h3>
             <p>
-                {article.body}
+                {article.excerpt}
             </p>
-        </div>
+        </a>
     </Link>
   )
 }
