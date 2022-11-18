@@ -1,7 +1,7 @@
 import Styles from '../styles/Layout.module.css'
 import Nav from './Nav'
 import Header from './Header'
-import Meta from './meta'
+import Meta from './Meta'
 
 function Layout({children}) {
   return (

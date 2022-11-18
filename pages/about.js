@@ -1,4 +1,5 @@
-import Meta from "../components/meta"
+import Meta from "../components/Meta"
+
 
 function about() {
   return (
