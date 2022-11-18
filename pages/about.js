@@ -1,6 +1,5 @@
 import Meta from "../components/Meta"
 
-
 function about() {
   return (
     <div>

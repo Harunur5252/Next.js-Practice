@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-import Meta from "../../../components/meta"
+import Meta from "../../../components/Meta"
 import {server} from '../../../config'
 
 
